@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Agent Return Desk — return window from your order paste</title>
+<meta name="description" content="Paste an order confirmation from an AI shopping agent. Get return window guesses, steps, and an optional deadline reminder. Parses only what you submit.">
+<link rel="stylesheet" href="/style.css"></head><body><div class="wrap">
+<header><a class="brand" href="/" style="color:#111;text-decoration:none">Agent Return Desk</a>
+<nav><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="mailto:nathan@nathanpetty.com">Contact</a></nav></header>
+<div class="banner">We only parse text <b>you</b> paste or forward into this box. Automated guesses — verify with the merchant. See <a href="/terms">disclaimer</a>.</div>
+<h1>Return window for an agent-placed order</h1>
+<p class="lead">Paste an order confirmation. We’ll guess the return window, list steps, and (optionally) take an opt-in email for a deadline reminder when email sending is enabled.</p>
+<textarea id="paste" placeholder="Paste order confirmation text…"></textarea>
+<button id="go" type="button">Parse return info</button>
+<div id="out"></div>
+<div class="card">
+  <h2 style="margin-top:0">Optional deadline reminder</h2>
+  <p class="muted">Opt-in only. Email sending is not live yet; we will not email you until an ESP is configured. CAN-SPAM: unsubscribe + 791 Jensen Court, Encinitas, CA 92024 on every message.</p>
+  <label>Email <input id="email" type="email" autocomplete="email" placeholder="you@example.com"></label>
+  <label><input id="consent" type="checkbox"> I opt in to one deadline reminder email from Agent Return Desk. I can unsubscribe anytime.</label>
+  <button id="remind" type="button">Save reminder preference</button>
+  <p class="muted" id="remind-out"></p>
+</div>
+<footer>Agent Return Desk · Nathan Petty, 791 Jensen Court, Encinitas, CA 92024 · <a href="mailto:nathan@nathanpetty.com">nathan@nathanpetty.com</a><br>
+<a href="/privacy">Privacy</a> · <a href="/terms">Terms</a><br>No cookies, no ad trackers. Not affiliated with any merchant or AI vendor.</footer>
+</div><script src="/app.js"></script></body></html>
